@@ -42,16 +42,13 @@ void inizializzaEsami(Appello *appelli, int *numEsami){
     strcpy(appelli[4].esame, "PALEOLOGIA\0");
     strcpy(appelli[4].data, "07-01-24\0");
 
-    strcpy(appelli[5].esame, "QUALCOSA\0");
+    strcpy(appelli[5].esame, "ANALISI2\0");
     strcpy(appelli[5].data, "13-08-24\0");
 
     *numEsami = 6;
 
 }
 
-void aggiungiPrenotazioneStudente(){
-    
-}
 
 void inviaEsamiAlServer(int socket, Appello appelli[maxNumAppelli], int numAppelli){
     int i;
